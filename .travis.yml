@@ -7,7 +7,7 @@ crystal:
 services:
   - docker
 env:
-  - SONIC_HOST=127.0.0.1 SONIC_PASSWORD=SecretPassword SONIC_PORT=1491
+  - SONIC_HOST=localhost SONIC_PASSWORD=SecretPassword SONIC_PORT=1491
 before_install:
   - docker pull valeriansaliou/sonic:v1.2.3
   - docker run -d -p 1491:1491 -v $TRAVIS_BUILD_DIR/config.cfg:/etc/sonic.cfg valeriansaliou/sonic:v1.2.3
