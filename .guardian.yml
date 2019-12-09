@@ -1,0 +1,5 @@
+files: ./**/*_spec.cr
+run: crystal spec %file%
+---
+files: ./shard.yml
+run: shards install

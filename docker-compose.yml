@@ -1,0 +1,24 @@
+version: '3.6'
+services:
+  sonic:
+    image: valeriansaliou/sonic:v1.2.3
+    volumes:
+       - ./sonic.cfg:/etc/sonic.cfg
+       - ./resources/sonic/store/:/var/lib/sonic/store/
+
+  app:
+    tty: true
+    stdin_open: true
+    build:
+      context: ./
+    command: crystal spec
+    environment:
+      - SONIC_HOST=sonic
+      - SONIC_PASSWORD=SecretPassword
+      - SONIC_PORT=1491
+    volumes:
+      - ./:/app
+    ports:
+      - '8081:8081'
+    links:
+      - sonic
