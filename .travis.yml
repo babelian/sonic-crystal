@@ -7,6 +7,7 @@ crystal:
 services:
   - docker
 env:
+  # not working: Failure: Error connecting to 'localhost:1491': Connection refused
   - SONIC_HOST=localhost SONIC_PASSWORD=SecretPassword SONIC_PORT=1491
 before_install:
   - docker pull valeriansaliou/sonic:v1.2.3

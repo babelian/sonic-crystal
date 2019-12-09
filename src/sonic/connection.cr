@@ -36,7 +36,7 @@ module Sonic
 
     #rb private
 
-    def socket
+    private def socket
       @socket ||= TCPSocket.new(@host, @port) #rb TCPSocket.open
     end
   end

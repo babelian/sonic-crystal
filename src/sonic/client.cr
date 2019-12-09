@@ -11,7 +11,7 @@ module Sonic
 
     #rb private
 
-    def channel_class(type : Symbol)
+    private def channel_class(type : Symbol)
       case type #rb .to_sym
       when :control then Channels::Control
       when :ingest then Channels::Ingest
