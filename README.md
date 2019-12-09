@@ -7,7 +7,7 @@
 A Crystal client for [Sonic search backend](https://github.com/valeriansaliou/sonic).
 
 This is my first project writing crystal, and is a port of
-[sonic-ruby](https://github.com/atipugin/sonic-ruby). This took about 4 hours, and went fairly smoothly. I've pegged the version to `sonic-ruby`, so if development continues it will be in lock step.
+[sonic-ruby](https://github.com/atipugin/sonic-ruby). This took about 4 hours, and went fairly smoothly. I've pegged the version to `sonic-ruby`, so if development continues it will be in lock step on major and minor versions.
 
 ## Ruby to Crystal Port Notes
 
@@ -26,7 +26,7 @@ Add following line to your `shard.yml`:
 dependencies:
   migrate:
     github: babelian/sonic-crystal.cr
-    version: ~> 0.22.0
+    version: ~> 0.2.2
 ```
 
 And then execute:
