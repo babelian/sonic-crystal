@@ -1,5 +1,7 @@
 # sonic-crystal
 
+[![Build Status](https://www.travis-ci.com/babelian/sonic-crystal.svg?branch=master)](https://www.travis-ci.com/babelian/sonic-crystal)
+
 A Crystal client for [Sonic search backend](https://github.com/valeriansaliou/sonic).
 
 This is my first project writing crystal, and is a port of
