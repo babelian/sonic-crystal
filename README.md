@@ -7,7 +7,7 @@ A Crystal client for [Sonic search backend](https://github.com/valeriansaliou/so
 This is my first project writing crystal, and is a port of
 [sonic-ruby](https://github.com/atipugin/sonic-ruby). This took about 4 hours, and went fairly smoothly. I've pegged the version to `sonic-ruby`, so if development continues it will be in lock step.
 
-## Ruby to Crystal Port notes
+## Ruby to Crystal Port Notes
 
 * I've commented with `#cr` for crystal specific modifications or `#rb` for examples of how it was originally implemented.
 * RSpec `include_context` and `include_examples` replaced with macros
