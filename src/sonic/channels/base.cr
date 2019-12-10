@@ -55,6 +55,9 @@ module Sonic
         else
           value
         end
+      rescue error
+        puts "Value was: #{value.inspect}"
+        raise error
       end
     end
   end
