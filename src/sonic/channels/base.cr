@@ -48,7 +48,7 @@ module Sonic
       private def type_cast_response(value)
         if value == "OK"
           true
-        elsif value =~ /^RESULT / #rb value.start_with?("RESULT ")
+        elsif value =~ /^RESULT \d/ #rb value.start_with?("RESULT ") #cr added \d as INFO returns a string result
           value.split(" ").last.to_i
         elsif value =~ /^EVENT / #rb value.start_with?("EVENT ")
           value.split(" ")[3..-1].join(" ")
