@@ -1,11 +1,11 @@
-name: sonic-crystal
+name: sonic
 version: 0.2.2
 crystal: 0.31.1
 license: MIT
 authors:
   - Zach Powell <zach@babelian.net>
 
-dependencies:
+development_dependencies:
   spec2:
     github: waterlink/spec2.cr
     version: ~> 0.9

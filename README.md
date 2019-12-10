@@ -24,8 +24,8 @@ Add following line to your `shard.yml`:
 
 ```yaml
 dependencies:
-  migrate:
-    github: babelian/sonic-crystal.cr
+  sonic:
+    github: babelian/sonic-crystal
     version: ~> 0.2.2
 ```
 
