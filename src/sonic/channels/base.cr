@@ -17,6 +17,11 @@ module Sonic
         execute("HELP", manual)
       end
 
+      # cr
+      def info
+        execute("INFO")
+      end
+
       def quit
         execute("QUIT")
         connection.disconnect
